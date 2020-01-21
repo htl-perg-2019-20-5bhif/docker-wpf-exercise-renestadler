@@ -1,0 +1,35 @@
+﻿<Window x:Class="WPFClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFClient"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+        <StackPanel Orientation="Horizontal">
+            <TextBlock FontSize="40" Foreground="Orange" FontWeight="ExtraBold">Car Booking System</TextBlock>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <DatePicker SelectedDate="{Binding Date}" FontSize="20"></DatePicker>
+            <Button Click="Button_Click" FontSize="20">Get Free Cars for Date</Button>
+        </StackPanel>
+        <StackPanel>
+            <DataGrid AutoGenerateColumns="False"  ItemsSource="{Binding Cars}" Name="CarGrid" CanUserAddRows="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Car Id" Binding="{Binding CarId}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Name" Binding="{Binding Name}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Brand" Binding="{Binding Brand}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Model" Binding="{Binding Model}"></DataGridTextColumn>
+                    <DataGridTemplateColumn>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Click="Button_Click_1" IsEnabled="True" Tag="{Binding CarId}">Book Car</Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+    </StackPanel>
+</Window>

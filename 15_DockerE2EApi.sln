@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29521.150
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DockerE2EApi", "DockerE2EApi\DockerE2EApi.csproj", "{CBC0695C-4C44-4F46-95D8-6F4ADC106FFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFClient", "WPFClient\WPFClient.csproj", "{3FD150E0-6A65-4D16-8597-AA00BDC3789D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBC0695C-4C44-4F46-95D8-6F4ADC106FFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBC0695C-4C44-4F46-95D8-6F4ADC106FFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBC0695C-4C44-4F46-95D8-6F4ADC106FFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBC0695C-4C44-4F46-95D8-6F4ADC106FFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FD150E0-6A65-4D16-8597-AA00BDC3789D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FD150E0-6A65-4D16-8597-AA00BDC3789D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FD150E0-6A65-4D16-8597-AA00BDC3789D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FD150E0-6A65-4D16-8597-AA00BDC3789D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {563D0BAC-8309-4C5E-98B4-0CB5EC0BE0F6}
+	EndGlobalSection
+EndGlobal
